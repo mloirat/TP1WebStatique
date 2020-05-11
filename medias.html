@@ -2,7 +2,12 @@
 <html lang='fr'>
 <head>
 <meta charset='utf-8'>
-<title> Titre </title>
+<title> Médias </title>
+<style>
+	table, td, th {border: 1px solid}
+</style>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <a href="textlistforms.html">Textes&amp;Listes&amp;Formulaires</a>
@@ -10,6 +15,36 @@
     <a href="tables.html">Tableaux</a>
     &vert;
     <a href="medias.html">Médias</a>
+    <br> <hr>
+    <ol>
+        <li><a href="#id1">Images</a></li>
+        <li><a href="#id2">Video 1</a></li>
+        <li><a href="#id3">Video 2</a></li>
+        <li><a href="#id4">Audio</a></li>
+        <li><a href="#id5">Iframe</a></li>
+    </ol>
+    <hr> 
+    <h1>Manipulation des Médias en HTML</h1>
+    <h2 id="id1">Images <span class="material-icons"> insert_photo </span></h2> 
+    <table>
+        <tr><td rowspan="2"> <img src="nantes.jpg" alt="erreur image Nantes" width="72" height="72"></td> <td><a href="https://isen-nantes.fr/" target="_blank"><svg width="200" height="200"></svg><rect width="300" height="100" fill="green"/></svg></a></td> <td><img src="nantes.jpg" alt="erreur image Nantes"></td></tr>
+        <tr> <td><svg height="60" width="200"><text x="0" y="15" fill="red" transform="rotate(30 20,40)">Bonjour</text></svg></td> <td><img src="nantes.jpg" alt="erreur image Nantes" width="72" height="72"></td></tr>
+    </table>
+    <h2 id="id2">Video avec la balise &lt; iframe &gt;  <span class="material-icons">movie</span></h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7gwK1dcz0IU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2 id="id3">Video avec la balise &lt; video &gt; <span class="material-icons">movie</span></h2>
+    <video width="320" height="240" controls>
+        <source src="windtunnel.mp4" type="video/mp4">
+        <source src="windtunnel.ogg" type="video/ogg">
+        <source src="windtunnel.webm" type="video/webm">
+    </video> 
+    <h2 id="id4">Audio <span class="material-icons">audiotrack</span></h2>
+    <audio controls>
+        <source src="audio.mp3.m4a" type="audio/m4a">
+    </audio>
+        
+    <h2 id="id5">Iframe <span class="material-icons">insert_link</span></h2> <a href="https://www.isen-nantes.fr/" target="#id6">Cliquez-ici</a>
+    <iframe  id="6" src="" width="400" height="300" name="nom"></iframe>
 
 </body>
 </html>
